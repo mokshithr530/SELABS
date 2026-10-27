@@ -16,3 +16,19 @@ The selected architectural style is **Microservices Architecture**. The `Lab3` f
 - `PES2UG24CS284_Lab3_Architecture_Justification.docx`
 
 The diagram models nine internal components, labelled interfaces, external dependencies, provided and required interface notation, and request/event flow. Both submission PDFs are single-page, black-and-white documents.
+
+---
+
+## Lab 5: Static Code Analysis
+
+Assigned repository: **L5_37_todo_manager** (`todo_manager.py`)
+
+Static analysis performed using **Bandit**, **Pylint**, and **Flake8** to detect and remediate security vulnerabilities, logic smells, and PEP 8 style violations.
+
+### Deliverables (`Lab5/`)
+- `todo_manager.py`: Cleaned and refactored script.
+- `pylint_report.txt` & `pylint_report_before.txt`: Improved score from **5.09/10** to **10.00/10**.
+- `bandit_report.txt` & `bandit_report_before.txt`: Eliminated all High (CWE-78) and Medium (CWE-502) severity issues (0 alerts).
+- `flake8_report.txt` & `flake8_report_before.txt`: Resolved all PEP 8 formatting violations (0 errors).
+- `issues.md`: Detailed documentation table of all identified issues and remediation approaches.
+- `reflection.md`: In-depth answers to static code analysis reflection questions.
