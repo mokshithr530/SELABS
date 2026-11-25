@@ -15,7 +15,7 @@ The selected architectural style is **Microservices Architecture**. The `Lab3` f
 - `PES2UG24CS284_Lab3_Architecture_Justification.pdf`
 - `PES2UG24CS284_Lab3_Architecture_Justification.docx`
 
-The diagram models nine internal components, labelled interfaces, external dependencies, provided and required interface notation, and request/event flow. Both submission PDFs are single-page, black-and-white documents.
+The diagram models nine internal components, labelled interfaces, external dependencies, provided and required interface notation, and request/event flow. The written justification occupies one page, with the component diagram included as a landscape appendix in the Word document and its PDF export.
 
 ---
 
