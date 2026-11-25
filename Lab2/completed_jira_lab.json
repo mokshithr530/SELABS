@@ -1,0 +1,46 @@
+{
+  "workspace": "https://pes2ug24cs284-lab2.atlassian.net",
+  "project_key": "ALP",
+  "project_type": "Company-managed Scrum",
+  "epics": 4,
+  "stories": 10,
+  "sprints": [
+    {
+      "id": 4,
+      "name": "Sprint 1",
+      "state": "closed",
+      "start": "2026-11-25T08:11:36.189Z",
+      "planned_end": "2026-12-02T08:11:36.189Z",
+      "completed": "2026-11-25T08:13:49.171Z",
+      "planned_points": 16,
+      "completed_points": 16
+    },
+    {
+      "id": 5,
+      "name": "Sprint 2",
+      "state": "closed",
+      "start": "2026-11-25T08:13:49.346Z",
+      "planned_end": "2026-12-02T08:13:49.346Z",
+      "completed": "2026-11-25T08:14:46.329Z",
+      "planned_points": 16,
+      "completed_points": 16
+    }
+  ],
+  "stories_done": [
+    "ALP-5",
+    "ALP-6",
+    "ALP-7",
+    "ALP-8",
+    "ALP-9",
+    "ALP-10",
+    "ALP-11",
+    "ALP-12"
+  ],
+  "remaining_backlog": {
+    "ALP-13": 3,
+    "ALP-14": 5
+  },
+  "docx": "/home/wingsfry/Downloads/PES2UG24CS284_Lab2.docx",
+  "pdf": "/home/wingsfry/Downloads/PES2UG24CS284_Lab2.pdf",
+  "note": "Same-day sprint simulation; no claim of real software implementation or measured team velocity."
+}
