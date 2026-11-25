@@ -1,0 +1,8 @@
+PASS: Mutable default removed
+PASS: Missing search returns None
+PASS: Pending tasks ordered by priority
+PASS: Case-insensitive search
+PASS: Completion removes task from pending list
+PASS: Unknown task ID handled
+PASS: JSON round-trip preserves task data
+PASS: JSON export matches saved tasks

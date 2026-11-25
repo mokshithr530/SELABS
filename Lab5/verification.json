@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-11-25T14:20:42.224052+05:30",
+  "student": "MOKSHITREDDY NALLABALLE",
+  "srn": "PES2UG24CS284",
+  "assigned_repository": "https://github.com/SETAPESU26/L5_37_todo_manager",
+  "student_repository": "https://github.com/mokshithr530/L5_37_todo_manager",
+  "already_completed": true,
+  "fix_commits": [
+    "02c68ae",
+    "a56fc94",
+    "d2c3ffa"
+  ],
+  "baseline_commit": "7c281ce",
+  "before": {
+    "pylint_score": 5.09,
+    "bandit_findings": 4,
+    "flake8_findings": 4
+  },
+  "after": {
+    "pylint_score": 10.0,
+    "bandit_findings": 0,
+    "flake8_findings": 0
+  },
+  "runtime_checks_passed": 8,
+  "source_sha256": "6d61d9f7340d1df8c254db61efc8dfa5a16d47c8631bcf6a29700521b04526a8",
+  "screenshots": "Captured directly from actual terminal runs; embedded copies are cropped only."
+}

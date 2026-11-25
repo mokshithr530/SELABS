@@ -1,0 +1,8 @@
+Assigned source: https://github.com/SETAPESU26/L5_37_todo_manager
+Student repository: https://github.com/mokshithr530/L5_37_todo_manager
+
+02c68ae fix(security): resolve Bandit vulnerabilities
+ a56fc94 fix(pylint): fix code quality warnings
+ d2c3ffa style(flake8): resolve formatting violations
+
+The three fix commits were completed earlier and are present in the student repository.
