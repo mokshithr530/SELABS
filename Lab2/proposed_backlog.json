@@ -1,0 +1,156 @@
+{
+  "status": "PROPOSED ONLY - not yet created or verified in Jira",
+  "student": "MOKSHITREDDY NALLABALLE",
+  "srn": "PES2UG24CS284",
+  "scenario": "Airport Lost Luggage Claim & Tracking Portal",
+  "scenario_source": "SELABS README and Lab 3 architecture justification; Lab 1 requirements were not available.",
+  "epics": [
+    {
+      "reference": "E1",
+      "summary": "Account and access",
+      "description": "Allow passengers and baggage agents to access the portal with appropriate permissions."
+    },
+    {
+      "reference": "E2",
+      "summary": "Lost luggage claims",
+      "description": "Allow passengers to register and review lost luggage claims."
+    },
+    {
+      "reference": "E3",
+      "summary": "Baggage tracking",
+      "description": "Help agents trace baggage and let passengers follow claim progress."
+    },
+    {
+      "reference": "E4",
+      "summary": "Notifications and compensation",
+      "description": "Notify passengers of updates and support compensation requests."
+    }
+  ],
+  "stories": [
+    {
+      "reference": "S1",
+      "epic_reference": "E1",
+      "summary": "Passenger sign in",
+      "description": "As a passenger, I want to sign in securely, so that I can access my own luggage claims.",
+      "acceptance_criteria": "Valid credentials allow access; invalid credentials are rejected; passengers cannot read another passenger's claims.",
+      "priority": "High",
+      "story_points": 5,
+      "proposed_sprint": "Sprint 1",
+      "rank": 1
+    },
+    {
+      "reference": "S2",
+      "epic_reference": "E2",
+      "summary": "Register a missing bag",
+      "description": "As a passenger, I want to submit my flight, baggage tag and contact details, so that I can report a missing bag.",
+      "acceptance_criteria": "Required fields are validated; a valid submission creates a unique claim reference; the passenger sees confirmation.",
+      "priority": "High",
+      "story_points": 5,
+      "proposed_sprint": "Sprint 1",
+      "rank": 2
+    },
+    {
+      "reference": "S3",
+      "epic_reference": "E2",
+      "summary": "View my claims",
+      "description": "As a passenger, I want to view my submitted claims and their status, so that I can check the progress of my reports.",
+      "acceptance_criteria": "Only the signed-in passenger's claims are listed; each shows its reference and current status; an empty list is handled.",
+      "priority": "High",
+      "story_points": 3,
+      "proposed_sprint": "Sprint 1",
+      "rank": 3
+    },
+    {
+      "reference": "S4",
+      "epic_reference": "E1",
+      "summary": "Agent access control",
+      "description": "As a baggage agent, I want to access the agent dashboard using my assigned role, so that I can manage claims securely.",
+      "acceptance_criteria": "An authorized agent can open the dashboard; a passenger cannot access agent actions; unauthorized requests are rejected.",
+      "priority": "High",
+      "story_points": 3,
+      "proposed_sprint": "Sprint 1",
+      "rank": 4
+    },
+    {
+      "reference": "S5",
+      "epic_reference": "E3",
+      "summary": "Search baggage scan records",
+      "description": "As a baggage agent, I want to search scan records by baggage tag, so that I can locate a reported missing bag.",
+      "acceptance_criteria": "An existing tag returns ordered scan records; an unknown tag shows no results; each scan shows location and time.",
+      "priority": "High",
+      "story_points": 5,
+      "proposed_sprint": "Sprint 2",
+      "rank": 5
+    },
+    {
+      "reference": "S6",
+      "epic_reference": "E3",
+      "summary": "Update claim status",
+      "description": "As a baggage agent, I want to update a claim as its bag is located and returned, so that I can keep the passenger informed.",
+      "acceptance_criteria": "Authorized agents can update status; invalid transitions are rejected; the change records the agent and timestamp.",
+      "priority": "High",
+      "story_points": 3,
+      "proposed_sprint": "Sprint 2",
+      "rank": 6
+    },
+    {
+      "reference": "S7",
+      "epic_reference": "E3",
+      "summary": "View tracking timeline",
+      "description": "As a passenger, I want to view the tracking timeline of my bag, so that I can see its last known location.",
+      "acceptance_criteria": "The timeline shows available scans in time order; unavailable tracking is explained; access is restricted to the claim owner.",
+      "priority": "Medium",
+      "story_points": 3,
+      "proposed_sprint": "Sprint 2",
+      "rank": 7
+    },
+    {
+      "reference": "S8",
+      "epic_reference": "E4",
+      "summary": "Receive claim notifications",
+      "description": "As a passenger, I want to receive a notification when my claim status changes, so that I can learn about updates without repeatedly checking.",
+      "acceptance_criteria": "A status change queues a notification for the claim owner; delivery failures are recorded for retry; duplicate handling avoids repeated messages for the same update.",
+      "priority": "Medium",
+      "story_points": 5,
+      "proposed_sprint": "Sprint 2",
+      "rank": 8
+    },
+    {
+      "reference": "S9",
+      "epic_reference": "E2",
+      "summary": "Add claim documents",
+      "description": "As a passenger, I want to attach supporting documents to my claim, so that I can provide the details needed to process it.",
+      "acceptance_criteria": "The claim owner can attach a supported file; oversized or unsupported files are rejected; other passengers cannot access the attachment.",
+      "priority": "Medium",
+      "story_points": 3,
+      "proposed_sprint": "Backlog",
+      "rank": 9
+    },
+    {
+      "reference": "S10",
+      "epic_reference": "E4",
+      "summary": "Request compensation",
+      "description": "As a passenger, I want to submit a compensation request for an eligible claim, so that I can request reimbursement for my loss.",
+      "acceptance_criteria": "Eligibility is checked; a valid request receives a reference and pending status; a duplicate request for the same claim is rejected.",
+      "priority": "Low",
+      "story_points": 5,
+      "proposed_sprint": "Backlog",
+      "rank": 10
+    }
+  ],
+  "sprint_plan": [
+    {
+      "name": "Sprint 1",
+      "duration_days": 7,
+      "goal": "Register and view luggage claims with passenger and agent access.",
+      "story_points": 16
+    },
+    {
+      "name": "Sprint 2",
+      "duration_days": 7,
+      "goal": "Trace bags, update claims and notify passengers.",
+      "story_points": 16
+    }
+  ],
+  "remaining_backlog_points": 8
+}
